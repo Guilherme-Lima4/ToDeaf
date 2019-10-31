@@ -34,6 +34,8 @@ target 'To_Deaf_TCC' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
+
   target 'To_Deaf_TCCTests' do
     inherit! :search_paths
     # Pods for testing
