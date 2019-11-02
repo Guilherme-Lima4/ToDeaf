@@ -5,6 +5,7 @@ import firebase from 'react-native-firebase';
 
 
 const Login = ({ navigation }) => (
+    //const name = new 
 class Login extends React.Component {
   state = { email: '', password: '', errorMessage: null }
   handleLogin = (teste) => {
