@@ -3,15 +3,16 @@ import { View, TextInput, StyleSheet, TouchableOpacity, Text, Button } from 'rea
 import firebase from 'react-native-firebase';
   
 
-       
+
+const Login = ({ navigation }) => (
 class Login extends React.Component {
   state = { email: '', password: '', errorMessage: null }
-  handleLogin = () => {
+  handleLogin = (teste) => {
     const { email, password } = this.state
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .then(()=> console.log("conectou"))
+      .then(Alert.alert("Button foi pressionado!"))
       .catch(error => console.log(error))
   }
 
@@ -42,6 +43,7 @@ class Login extends React.Component {
         )
     }
 }
+);
 
 const styles = StyleSheet.create({
     container: {
@@ -79,5 +81,9 @@ const styles = StyleSheet.create({
         fontSize: 12
     }
 })
+
+Login.navigationOptions = {
+    title: 'Login',
+  }
 
 export default Login

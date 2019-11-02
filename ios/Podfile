@@ -36,6 +36,8 @@ target 'To_Deaf_TCC' do
 
   pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
 
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
   target 'To_Deaf_TCCTests' do
     inherit! :search_paths
     # Pods for testing
