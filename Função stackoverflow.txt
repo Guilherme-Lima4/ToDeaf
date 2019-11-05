@@ -1,0 +1,37 @@
+export const Login = createStackNavigator({
+  Login: {
+     screen: Login,
+
+     navigationOptions: {
+         header: null
+     }
+   }
+  });
+
+export const Main = createStackNavigator({
+  Main: {
+     screen: Main,
+
+     navigationOptions: {
+        headerLeft: null
+    }
+}
+ });
+
+export const Loading = (createStackNavigator({
+     Loading: {
+        screen: Loading,
+
+        navigationOptions: {
+          headerLeft: null
+        }
+     },
+  });   
+
+
+ {
+    initialRouteName: 'AuthLoadingScreen',
+ }
+));
+
+https://pt.stackoverflow.com/questions/400451/n%C3%A3o-consigo-fazer-o-redirecionamento-para-outra-tela

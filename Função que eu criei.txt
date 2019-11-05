@@ -1,0 +1,34 @@
+const App = SwitchNavigator(
+  {
+    Loading: {
+      screen: Loading,
+
+      navigationOptions: {
+        headerLeft: null
+    },
+    
+    Cadastro: {
+      screen: Cadastro,
+
+      navigationOptions: {
+        headerLeft: null
+    },
+    
+    Login: {
+      screen: Login,
+
+      navigationOptions: {
+        headerLeft: null
+    },
+    
+    Main: {
+      screen: Main,
+
+      navigationOptions: {
+        headerLeft: null
+    }
+  },
+  {
+    initialRouteName: 'Loading'
+  }
+)
